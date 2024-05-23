@@ -1,0 +1,56 @@
+﻿@page "/"
+
+<PageTitle>Pickleball Team Randomizer</PageTitle>
+
+<h1>Pickleball Team Randomizer</h1>
+
+<div>
+    <label for="names">Enter names (comma separated):</label>
+    <input @bind="Names" id="names" type="text" required />
+    <button @onclick="RandomizeTeams">Randomize Teams</button>
+</div>
+
+@if (Team1.Count > 0 && Team2.Count > 0)
+{
+    <h2>Team 1</h2>
+    <ul>
+        @foreach (var name in Team1)
+        {
+            <li>@name</li>
+        }
+    </ul>
+    <h2>Team 2</h2>
+    <ul>
+        @foreach (var name in Team2)
+        {
+            <li>@name</li>
+        }
+    </ul>
+}
+
+@code {
+    private string Names { get; set; }
+    private List<string> Team1 { get; set; } = new();
+    private List<string> Team2 { get; set; } = new();
+
+    private void RandomizeTeams()
+    {
+        if (string.IsNullOrWhiteSpace(Names))
+        {
+            return;
+        }
+
+        var nameList = new List<string>(Names.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries));
+        for (int i = 0; i < nameList.Count; i++)
+        {
+            nameList[i] = nameList[i].Trim();
+        }
+        var random = new Random();
+        nameList = nameList.OrderBy(x => random.Next()).ToList();
+
+        Team1 = nameList.Take(nameList.Count / 2).ToList();
+        Team2 = nameList.Skip(nameList.Count / 2).ToList();
+
+        StateHasChanged();
+    }
+}

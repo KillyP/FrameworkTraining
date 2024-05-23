@@ -1,0 +1,57 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\jacob\\dev\\Pickleball\\Pickleball\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\jacob\\dev\\Pickleball\\Pickleball\\obj\\Debug\\net8.0\\compressed\\kj3j17cd34.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\jacob\\dev\\Pickleball\\Pickleball\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Pickleball.styles.css",
+      "PackagePath": "staticwebassets\\Pickleball.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\jacob\\dev\\Pickleball\\Pickleball\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\jacob\\dev\\Pickleball\\Pickleball\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\jacob\\dev\\Pickleball\\Pickleball\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jacob\\dev\\Pickleball\\Pickleball\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\jacob\\dev\\Pickleball\\Pickleball\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\jacob\\dev\\Pickleball\\Pickleball\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Pickleball.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Pickleball.props",
+      "PackagePath": "build\\Pickleball.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Pickleball.props",
+      "PackagePath": "buildMultiTargeting\\Pickleball.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Pickleball.props",
+      "PackagePath": "buildTransitive\\Pickleball.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
