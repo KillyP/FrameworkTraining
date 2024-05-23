@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pickleball Team Randomizer</title>
+</head>
+<body>
+    <h1>Pickleball Team Randomizer</h1>
+    <form method="POST">
+        <label for="names">Enter names (comma separated):</label>
+        <input type="text" id="names" name="names" required>
+        <button type="submit">Randomize Teams</button>
+    </form>
+    
+    {% if teams %}
+        <h2>Team 1</h2>
+        <ul>
+            {% for name in teams[0] %}
+                <li>{{ name }}</li>
+            {% endfor %}
+        </ul>
+        <h2>Team 2</h2>
+        <ul>
+            {% for name in teams[1] %}
+                <li>{{ name }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
